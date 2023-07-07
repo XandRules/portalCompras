@@ -4,14 +4,14 @@
   <div class="flex-container">
     <mat-card [formGroup]="formLogin">
       <h2>Login</h2>
-      <mat-form-field class="flex-item">
+      <mat-form-field class="flex-item" appearance="outline">
         <mat-label>E-mail</mat-label>
         <mat-icon matSuffix>email</mat-icon>
         <input matInput placeholder="email@email.com" formControlName="email">
         <mat-error *ngIf="formLogin.get('email')?.hasError">E-mail deve conter um valor válido</mat-error>
       </mat-form-field>
 
-      <mat-form-field class="flex-item">
+      <mat-form-field class="flex-item" appearance="outline">
         <mat-label>Senha</mat-label>
        
         <input matInput [type]="hide ? 'password' : 'text'" formControlName="senha">
