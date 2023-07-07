@@ -13,8 +13,9 @@ mat-card {
   margin-top: 200px;
 }
 
-.flex-item {
+.flex-item:nth-child(1) {
   margin-top: 60px;
+  margin-bottom: 10px;
 }
 
 .icon-button{
